@@ -140,25 +140,25 @@ img
     padding: 90px 0
     background: url('../img/offer-bg.jpg') no-repeat
     background-position: center right
-    background-size: contain 
-    position: relative 
+    background-size: contain
+    position: relative
     @media (max-width: 1200px)
-        background-size: cover 
+        background-size: cover
     @media (max-width: 768px)  
-        background: #fff
+    color: #fff
     &:before 
         content: ''
         width: 50%
         height: 100%
-        position: absolute 
-        background-color: #fff 
+        position: absolute
+        background-color: #fff
         top: 0
         left: 0
 
     &-block
         width: 50%
         padding-right: 90px
-        position:relative
+        position: relative
         @media (max-width: 768px)
             width: 100%
             padding-right: 0
@@ -188,3 +188,28 @@ img
             font-size: 13px
         @media (max-width: 768px)
             font-size: 16px
+
+
+
+.modal
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#000, .5)
+    display: none
+    &_active
+        display: flex
+    &-dialog
+        marfgin: auto
+        max-width: 450px
+        width: 90%
+        min-height: 200px
+        background-color: #fff
+        padding: 40px
+        position: relative
+        &__close
+            position: absolute
+            right: 0
+            top: 0
